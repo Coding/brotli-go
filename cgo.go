@@ -10,3 +10,10 @@ package brotli
 // #cgo CFLAGS: -O3
 // #cgo LDFLAGS: -lm
 import "C"
+
+import (
+	_ "github.com/coding/brotli-go/brotli"
+	_ "github.com/coding/brotli-go/common"
+	_ "github.com/coding/brotli-go/dec"
+	_ "github.com/coding/brotli-go/enc"
+)
